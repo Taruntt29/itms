@@ -1,0 +1,50 @@
+.w-33 {
+    width: 33%;
+}
+
+.min-100vh {
+    min-height: 100vh;
+}
+
+.min-100vw {
+    min-width: 100vw;
+}
+
+.pt-6 {
+    padding-top: 5rem !important;
+}
+
+.pt-7 {
+    padding-top: 6rem !important;
+}
+
+.bg-red {
+    background-color: #E30613;
+}
+
+.zIndex-9000 {
+    z-index: 9000;
+}
+
+.transition-3s {
+    transition: all .3s;
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.upperCase {
+    text-transform: uppercase;
+}
+
+.capital {
+    text-transform: capitalize;
+}
+
+.pointer{
+    cursor: pointer;
+}

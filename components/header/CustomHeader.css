@@ -1,0 +1,19 @@
+.logo {
+  height: 50px;
+  width: 225px;
+  /* background-image: url(http://www.manitouamericasonline.com/Libraries/Color_Logos/Manitou_Logo_Color.sflb.ashx); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header-bg {
+  background: #fafbfc;
+}
+
+.header-shadow {
+  box-shadow: 0 0.46875rem 2.1875rem rgba(4, 9, 20, 0.03),
+    0 0.9375rem 1.40625rem rgba(4, 9, 20, 0.03),
+    0 0.25rem 0.53125rem rgba(4, 9, 20, 0.05),
+    0 0.125rem 0.1875rem rgba(4, 9, 20, 0.03);
+}

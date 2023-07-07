@@ -1,0 +1,53 @@
+.file__uploader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 8px;
+  color: #0f0f0f;
+  background-color: #edf2f6 !important;
+  width: 140px;
+  height: 142px;
+  border-radius: 22px;
+  border: 1px dashed #4c535f;
+  border-radius: 19px;
+  cursor: pointer;
+  font-family: 'Manrope';
+  font-weight: 500;
+  font-size: 14px;
+  color: #4c535f;
+}
+
+.file__uploader__files {
+  width: 140px;
+  height: 142px;
+  border-radius: 19px;
+  position: relative;
+}
+
+.file__uploader__files img {
+  width: 140px;
+  height: 142px;
+  border-radius: 19px;
+}
+
+.file__uploader__files button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.file__uploader__title {
+  font-family: 'Manrope';
+  font-weight: 500;
+  font-size: 14px;
+  color: #4c535f;
+}
+
+.file__uploader__files__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-gap: 20px;
+  overflow: hidden;
+}
