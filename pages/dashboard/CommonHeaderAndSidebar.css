@@ -1,0 +1,11 @@
+.custom-sidebar-container {
+  position: fixed;
+  height: 104vh;
+}
+
+.h-120 {
+  height: 120%;
+}
+.nevbarMenu {
+  padding-top: 66px !important;
+}

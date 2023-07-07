@@ -1,0 +1,42 @@
+.input-bottom {
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    border-radius: 0px;
+    padding: 0px;
+  }
+  
+  .input-background {
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: #8d98aa;
+    background-color: #e0e4ec;
+    border: 1.5px solid #e0e4ec;
+    border-radius: 0.15rem;
+  }
+  
+  .custom-input {
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: #8d98aa;
+    font-family: 'Manrope';
+  }
+  
+  .label-font-size {
+    font-family: 'Manrope';
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: #4c535f;
+  }
+  
+  input::placeholder {
+    color: #8d98aa;
+    font-size: 0.8rem;
+  }
+  
+  .custom-input-form-group .form-label {
+    font-family: 'Manrope';
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: #4c535f;
+  }
+  

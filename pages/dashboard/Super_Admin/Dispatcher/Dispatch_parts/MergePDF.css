@@ -1,0 +1,568 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+/*.header-block, .header-space,*/
+/* .footer-space {
+    height: 60px;
+    background-color: white;
+    border: none;
+    border-style: none;
+  } */
+.Invoice {
+  width: 100%;
+  height: auto;
+  background-color: ghostwhite;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+/* .footer-block {
+    position: fixed !important;
+    bottom: 0 !important;
+  }
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  } */
+@page {
+  size: A4;
+}
+body {
+  font-family: sans-serif;
+  font-style: normal;
+}
+.header {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+}
+.printpage {
+  margin: 1%;
+  width: 97% !important;
+  height: 100% !important;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border: 2px solid black;
+  float: left;
+}
+.printLogo {
+  width: 50mm;
+  float: left;
+}
+img {
+  max-width: 100% !important;
+}
+.headerDetail {
+  margin-bottom: 20px;
+  /* background: #f4f3f3 !important; */
+  color: #777 !important;
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.kioskinfo {
+  margin-bottom: 8px;
+  color: #777 !important;
+  display: inline-block;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: -7px;
+}
+.dateDiv {
+  border-top: 17px;
+  float: left;
+  text-align: center;
+  width: 53%;
+  padding: 8px 0px 6px;
+  margin-left: 286px;
+  border-top: 3px solid #9c9999;
+  border-bottom: 3px solid #9c9999;
+}
+.dateDiv span {
+  font-weight: bold;
+}
+.HeaderTitle {
+  position: relative;
+  top: 2px;
+  text-align: left;
+  font-size: 1em;
+  border-top: 2px solid #9c9999;
+  border-bottom: 2px solid #9c9999;
+  font-weight: 800;
+}
+.HeaderTitle span {
+  position: relative;
+}
+.reportcontent {
+  display: inline-block;
+  width: 100%;
+}
+.DocPatientDetail {
+  padding: 0 10px;
+  font-weight: 800;
+}
+.deliveryContainer {
+  border-bottom: 2px solid;
+}
+.detailContainer {
+  display: inline-block;
+  width: 100%;
+  font-size: 14px;
+}
+.detailContainer .labelText {
+  width: 20%;
+  display: inline-block;
+  font-weight: bold;
+}
+.labelDataright {
+  text-transform: capitalize;
+  margin-right: 84px;
+}
+.labelDataleft {
+  text-transform: capitalize;
+  margin-left: 85px;
+}
+.userDetailiconleft {
+  width: 50%;
+  float: left;
+  text-align: left;
+  font-weight: bold;
+  padding-top: 20px;
+  font-size: 20px;
+  color: black;
+}
+.consigneedescleft {
+  position: relative;
+  width: 300px;
+  height: 100px;
+  padding: 7px;
+  margin: 25px;
+  /* background: lightgray; */
+  border: none;
+  text-align: center;
+}
+.consigneedescleft::before,
+.consigneedescleft::after {
+  position: absolute;
+  width: 50px;
+  height: 100px;
+  content: "";
+}
+.consigneedescleft::before {
+  left: 0;
+  top: 0;
+  border-left: 3px solid #e1d9d9;
+  border-top: 3px solid #e1d9d9;
+}
+.consigneedescleft::before {
+  left: 0;
+  bottom: 0;
+  border-left: 3px solid #e1d9d9;
+  border-bottom: 3px solid #e1d9d9;
+}
+.consigneedescleft::after {
+  right: 0;
+  bottom: 0;
+  border-right: 3px solid #e1d9d9;
+  border-bottom: 3px solid #e1d9d9;
+}
+.consigneedescleft::after {
+  right: 0;
+  top: 0;
+  border-right: 3px solid #e1d9d9;
+  border-top: 3px solid #e1d9d9;
+}
+.userDetailiconright {
+  width: 50%;
+  float: right;
+  text-align: right;
+  font-weight: bold;
+  padding-top: 20px;
+  font-size: 20px;
+  color: black;
+}
+.userDetailiconleft .consigneedescleft {
+  float: left;
+  text-align: left;
+  font-weight: 400;
+  padding-top: 4px;
+  font-size: 15px;
+  color: black;
+  padding-left: 45px;
+}
+.userDetailiconright .consigneedescright {
+  float: right;
+  text-align: left;
+  font-weight: 400;
+  padding-top: 5px;
+  font-size: 15px;
+  color: black;
+  padding-left: 35px;
+}
+/* NEW 14-06-2023 */
+.consigneedescright {
+  position: relative;
+  width: 300px;
+  height: 100px;
+  padding: 7px;
+  margin: 25px;
+  /* background: lightgray; */
+  border: none;
+  text-align: center;
+}
+.consigneedescright::before,
+.consigneedescright::after {
+  position: absolute;
+  width: 33px;
+  height: 100px;
+  content: "";
+}
+.consigneedescright::before {
+  left: 0;
+  top: 0;
+  border-left: 3px solid #e1d9d9;
+  border-top: 3px solid #e1d9d9;
+}
+.consigneedescright::before {
+  left: 0;
+  bottom: 0;
+  border-left: 3px solid #e1d9d9;
+  border-bottom: 3px solid #e1d9d9;
+}
+.consigneedescright::after {
+  right: 0;
+  bottom: 0;
+  border-right: 3px solid #e1d9d9;
+  border-bottom: 3px solid #e1d9d9;
+}
+.consigneedescright::after {
+  right: 0;
+  top: 0;
+  border-right: 3px solid #e1d9d9;
+  border-top: 3px solid #e1d9d9;
+}
+/* END 14*06-2023*/
+.healthScoreImg {
+  width: 20%;
+  background: rgb(255, 255, 255);
+  border-radius: 100%;
+  position: relative;
+  top: 3px;
+}
+.dataRow {
+  padding: 5px;
+}
+.dataHead .column1 {
+  width: 15%;
+}
+.dataHead .column2 {
+  width: 18%;
+}
+.dataRow p {
+  margin: 0;
+}
+.column3 {
+  text-align: center;
+  width: 51%;
+}
+.dataCell {
+  display: inline-block;
+  margin-left: -3px;
+}
+.dataTableContainer {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+  padding-top: 25px;
+}
+.tableHead {
+  display: inline-block;
+  padding: 5px;
+  padding-right: 70px;
+  border: 1px solid #cccccc;
+  position: relative;
+  bottom: -1px;
+  border-radius: 0px 30px 0 0px;
+  color: #24a2db;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.tableDiv {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #cccccc;
+  border-radius: 0px 10px 10px 10px;
+  padding: 3px;
+}
+.tableDiv .dataRow:first-child {
+  border-radius: 0px 7px 0px 0px !important;
+}
+.tableDiv .dataRow:nth-child(odd) {
+  background: #f4f3f3;
+}
+.dataRow {
+  padding: 5px;
+  font-size: 14px;
+}
+.dataTableContainer .column1 {
+  width: 15%;
+  position: relative;
+  bottom: 15px;
+}
+.dataTableContainer .column2 {
+  width: 18%;
+  position: relative;
+  bottom: 15px;
+}
+.dataTableContainer .rapidtestcolumn {
+  width: 35%;
+  position: relative;
+  bottom: 0px;
+}
+.bmiRangeBox .rangeBox {
+  width: 25%;
+}
+.rangeBox {
+  text-align: center;
+  float: left;
+}
+.rangeColor.red {
+  background: #ff5722;
+  color: #fff;
+}
+.rangeColor {
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 0;
+  border-left: 1px;
+}
+.rangeColor.green {
+  background: #7aad3e;
+}
+.rangeColor.orange {
+  background: #f79504;
+}
+.rangeColor.brown {
+  background: #a75e48;
+}
+.hydRangeBox .rangeBox,
+.tempRangeBox .rangeBox {
+  width: 50%;
+}
+.fatRangeBox .rangeBox {
+  width: 20%;
+}
+.rangeColor.blue {
+  background: #2196f3;
+}
+.footer {
+  width: 100%;
+  padding: 5px 0;
+  border-top: 2px solid #c3c2c2;
+  border-bottom: 2px solid #c3c2c2;
+}
+.footer .footerElement {
+  display: inline-block;
+  text-align: center;
+}
+.footertext {
+  display: inline-block;
+}
+.footertext p {
+  margin: 0;
+  text-align: center;
+  word-break: break-word;
+  font-size: 10px;
+}
+.footerElement.footerContact {
+  width: 15%;
+}
+.footerElement.footerEmail {
+  width: 25%;
+}
+.footerElement.footerWebsite {
+  width: 25%;
+}
+.footerElement.footerAddress {
+  width: 30%;
+}
+.footerElement img {
+  width: 100%;
+}
+.footerImg {
+  width: 4mm;
+  display: inline-block;
+  position: relative;
+  top: 1mm;
+}
+/*this has been set by trial error to have 15cm wide grid, DO NOT CHANGE*/
+.ecgsize {
+  width: 260mm !important;
+  height: 52mm !important;
+}
+.stripTest .column3 {
+  text-align: left;
+  width: 67%;
+}
+.rapidtestColumn3 {
+  text-align: left;
+  width: 50%;
+}
+.stripContainer {
+  page-break-after: always;
+}
+.eyereport .rangeColor {
+  font-size: 14px;
+}
+.scannedImages {
+  /*position:relative;
+  top:30mm;*/
+  width: 210mm;
+  margin: 5mm auto;
+  page-break-after: always;
+}
+.scannedImages:last-child {
+  page-break-after: avoid;
+}
+.printUrineData {
+  width: 30.8%;
+  float: left;
+  padding: 0 10px;
+}
+.urineTestReport {
+  color: #555 !important;
+  background: #ffffff !important;
+  margin: 10px 0;
+  border: 1px solid #9c9999;
+  border-radius: 5px;
+  padding: 10px;
+}
+.printUrineData .testImg {
+  width: 25% !important;
+  display: inline-block;
+  height: 40px;
+  padding: 0;
+  float: left;
+  border-radius: 5px;
+}
+.printUrineData .urineTestData {
+  text-align: center;
+  padding: 0 5px;
+}
+p.testTitle {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+p.testData {
+  margin: 0;
+  font-size: 1em;
+  font-weight: bold;
+}
+.urineRange {
+  background: rgb(244, 243, 243) !important;
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 5px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.urineTestReport .pull-left {
+  float: left;
+  width: 30%;
+  text-align: left;
+}
+.urineTestReport .pull-right {
+  float: right;
+  width: 70%;
+  text-align: right;
+}
+.basicAvailable {
+  page-break-before: always;
+  position: relative;
+  top: 30mm !important;
+}
+button.generate-button {
+  margin-left: 50%;
+  font-size: 25px;
+  color: blueviolet;
+  border-color: blue;
+}
+.generate-button:hover {
+  color: rgb(29, 218, 158);
+}
+/* ASHISH CSS START*/
+.Delivery-info {
+  width: 100%;
+}
+span.Delivery-lable {
+  font-weight: bold;
+}
+.deliveryDescription {
+  height: 95px;
+  border-top: 2px solid #343030;
+}
+.delivery-form-left {
+  float: left;
+  text-align: left;
+  font-weight: 400;
+  padding-top: 20px;
+  font-size: 15px;
+  color: black;
+  /* margin-left: 20px; */
+  width: 50%;
+}
+.delivery-form-right {
+  float: right;
+  text-align: left;
+  font-weight: 400;
+  padding-top: 20px;
+  font-size: 15px;
+  color: black;
+  margin-right: 85px;
+}
+.deliveryDescription:span {
+  font-weight: bold;
+}
+.dataTableContainer thead {
+  background-color: #bdbdbd;
+}
+.dataTableContainerTwo thead {
+  background-color: #bdbdbd;
+}
+.Delivery-info-signature {
+  border-bottom: 2px solid black;
+  padding-top: 20px;
+  background-color: #bdbdbd;
+}
+.signature-form-left {
+  float: left;
+  text-align: left;
+  font-weight: 400;
+  padding-top: 20px;
+  font-size: 15px;
+  color: black;
+  margin-left: 20px;
+  width: 50%;
+}
+span.external-appearance-lable {
+  font-weight: 700;
+  margin-left: 20px;
+}
